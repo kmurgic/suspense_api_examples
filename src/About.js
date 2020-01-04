@@ -1,23 +1,8 @@
-import React, { Fragment, useEffect, useState } from 'react';
-import { fetchAboutById } from './mockFetch';
-import LoadingSpinner from './LoadingSpinner';
+import React, { Fragment } from 'react';
 
 const About = props => {
-  const { characterId, name } = props;
-  const [about, setAbout] = useState('');
-  const [loading, setLoading] = useState(false);
+  const { about, name } = props;
 
-  useEffect(() => {
-    const updateAbout = async () => {
-      setLoading(true);
-      const newAbout = await fetchAboutById(characterId);
-      setLoading(false);
-      setAbout(newAbout);
-    };
-    updateAbout();
-  }, [characterId]);
-
-  if (loading) return <LoadingSpinner />
   return (
     <Fragment>
       <h3>{`About ${name}`}</h3>

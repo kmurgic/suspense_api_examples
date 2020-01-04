@@ -1,31 +1,34 @@
 import React, { useEffect, useState } from 'react';
-import { fetchNameById } from './mockFetch';
 import Quote from './Quote';
 import MainImage from './MainImage';
 import About from './About';
 import LoadingSpinner from './LoadingSpinner';
+import fetchCharacterData from './fetchCharacterData';
 
 const Character = props => {
   const { characterId } = props;
-  const [name, setName] = useState('');
+  const [data, setData] = useState({});
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
-    const updateName = async () => {
+    const updateData = async () => {
       setLoading(true);
-      const newName = await fetchNameById(characterId);
+      const newData = await fetchCharacterData(characterId);
       setLoading(false);
-      setName(newName);
+      setData(newData);
     };
-    updateName();
+    updateData();
   }, [characterId]);
+
+  const { name, quote, image, about } = data;
 
   if (loading) return <LoadingSpinner />
   return (
     <div>
       <h2>{name}</h2>
-      <Quote characterId={characterId} />
-      <MainImage characterId={characterId} name={name} />
-      <About characterId={characterId} name={name} />
+      <Quote quote={quote} />
+      <MainImage image={image} name={name} />
+      <About about={about} name={name} />
     </div>
   );
 };
