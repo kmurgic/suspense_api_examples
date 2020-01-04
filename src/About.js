@@ -1,13 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 const About = props => {
-  const { about, name } = props;
+  const { resource } = props;
+  const about = resource.about.read();
 
   return (
-    <Fragment>
-      <h3>{`About ${name}`}</h3>
-      <p className="about">{about}</p>
-    </Fragment>
+    <p className="about">{about}</p>
   );
 };
 

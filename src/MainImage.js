@@ -1,10 +1,10 @@
 import React from 'react';
 
 const MainImage = props => {
-  const { image, name } = props;
-
+  const { resource } = props;
+  const image = resource.image.read();
   return (
-    <img alt={name} className="main-image" src={image} />
+    <img alt="Character" className="main-image" src={image} />
   );
 };
 

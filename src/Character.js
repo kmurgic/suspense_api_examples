@@ -1,34 +1,29 @@
-import React, { useEffect, useState } from 'react';
+import React, { Suspense } from 'react';
 import Quote from './Quote';
 import MainImage from './MainImage';
 import About from './About';
 import LoadingSpinner from './LoadingSpinner';
 import fetchCharacterData from './fetchCharacterData';
+import Name from './Name';
 
 const Character = props => {
   const { characterId } = props;
-  const [data, setData] = useState({});
-  const [loading, setLoading] = useState(false);
+  const resource = fetchCharacterData(characterId);
 
-  useEffect(() => {
-    const updateData = async () => {
-      setLoading(true);
-      const newData = await fetchCharacterData(characterId);
-      setLoading(false);
-      setData(newData);
-    };
-    updateData();
-  }, [characterId]);
-
-  const { name, quote, image, about } = data;
-
-  if (loading) return <LoadingSpinner />
   return (
     <div>
-      <h2>{name}</h2>
-      <Quote quote={quote} />
-      <MainImage image={image} name={name} />
-      <About about={about} name={name} />
+      <Suspense fallback={<LoadingSpinner />}>
+        <Name resource={resource} />
+      </Suspense>
+      <Suspense fallback={<LoadingSpinner />}>
+        <Quote resource={resource} />
+      </Suspense>
+      <Suspense fallback={<LoadingSpinner />}>
+        <MainImage resource={resource} />
+      </Suspense>
+      <Suspense fallback={<LoadingSpinner />}>
+        <About resource={resource} />
+      </Suspense>
     </div>
   );
 };

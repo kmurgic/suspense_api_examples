@@ -1,12 +1,13 @@
 import React from 'react';
 
-const Quote = ({ quote }) => (
-  <p>
-    <quote>
+const Quote = ({ resource }) => {
+  const quote = resource.quote.read();
+  return (
+    <p>
       <em>{`"${quote}"`}</em>
-    </quote>
-  </p>
-);
+    </p>
+  );
+}
 
 
 export default Quote;

@@ -11,14 +11,14 @@ h1 {
 }
 
 .about {
-  margin: 0 auto;
+  margin: 1em auto;
   text-align: left;
   width: 50%;
 }
 
 button {
   padding: 0.5em 1em;
-  margin-top: 2em;
+  margin-top: 1em;
   font-size: 0.8em;
   font-family: sans-serif;
   font-weight: bold;
