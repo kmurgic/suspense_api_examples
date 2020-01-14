@@ -6,6 +6,7 @@ const fetchCharacterData = (characterId) => {
   const imagePromise = fetchImageById(characterId);
   const aboutPromise = fetchAboutById(characterId);
   return {
+    id: characterId,
     name: wrapPromise(namePromise),
     quote: wrapPromise(quotePromise),
     image: wrapPromise(imagePromise),
