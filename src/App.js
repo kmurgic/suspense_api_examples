@@ -1,8 +1,8 @@
 import React from 'react';
-import FetchOnRenderExample from './FetchOnRenderExample';
+import FetchThenRenderExample from './FetchThenRenderExample';
 
 const App = () => (
-  <FetchOnRenderExample />
+  <FetchThenRenderExample />
 );
 
 export default App;
