@@ -1,8 +1,8 @@
 import React from 'react';
-import SuspenseExample from './SuspenseExample';
+import SuspenseListExample from './SuspenseListExample';
 
 const App = () => (
-  <SuspenseExample />
+  <SuspenseListExample />
 );
 
 export default App;
