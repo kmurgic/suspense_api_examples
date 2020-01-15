@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/suspense_api_examples/static/css/main.ff0f4af9.chunk.css",
+    "main.js": "/suspense_api_examples/static/js/main.eb759940.chunk.js",
+    "main.js.map": "/suspense_api_examples/static/js/main.eb759940.chunk.js.map",
+    "runtime-main.js": "/suspense_api_examples/static/js/runtime-main.cf4d1bcc.js",
+    "runtime-main.js.map": "/suspense_api_examples/static/js/runtime-main.cf4d1bcc.js.map",
+    "static/js/2.f6508b7e.chunk.js": "/suspense_api_examples/static/js/2.f6508b7e.chunk.js",
+    "static/js/2.f6508b7e.chunk.js.map": "/suspense_api_examples/static/js/2.f6508b7e.chunk.js.map",
+    "index.html": "/suspense_api_examples/index.html",
+    "precache-manifest.c8129c1299896677577fa0d082783ada.js": "/suspense_api_examples/precache-manifest.c8129c1299896677577fa0d082783ada.js",
+    "service-worker.js": "/suspense_api_examples/service-worker.js",
+    "static/css/main.ff0f4af9.chunk.css.map": "/suspense_api_examples/static/css/main.ff0f4af9.chunk.css.map",
+    "static/js/2.f6508b7e.chunk.js.LICENSE": "/suspense_api_examples/static/js/2.f6508b7e.chunk.js.LICENSE",
+    "static/media/Yoda.png": "/suspense_api_examples/static/media/Yoda.497b8e02.png",
+    "static/media/hanSolo.jpg": "/suspense_api_examples/static/media/hanSolo.e9f93d51.jpg",
+    "static/media/leia.jpg": "/suspense_api_examples/static/media/leia.14e6dd5c.jpg",
+    "static/media/loadingSpinner.gif": "/suspense_api_examples/static/media/loadingSpinner.be0d9fd5.gif",
+    "static/media/luke.jpg": "/suspense_api_examples/static/media/luke.7062f8ac.jpg",
+    "static/media/obiwan.jpg": "/suspense_api_examples/static/media/obiwan.6576a96a.jpg",
+    "static/media/palpatine.jpeg": "/suspense_api_examples/static/media/palpatine.32fb73ae.jpeg",
+    "static/media/vader.png": "/suspense_api_examples/static/media/vader.1dcacb03.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cf4d1bcc.js",
+    "static/js/2.f6508b7e.chunk.js",
+    "static/css/main.ff0f4af9.chunk.css",
+    "static/js/main.eb759940.chunk.js"
+  ]
+}
