@@ -1,8 +1,8 @@
 import React from 'react';
-import UseTransitionExample from './UseTransitonExample';
+import FetchOnRenderExample from './FetchOnRenderExample';
 
 const App = () => (
-  <UseTransitionExample />
+  <FetchOnRenderExample />
 );
 
 export default App;
