@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a3b4d5a31f57fe8d4140017d8654a65a",
+    "revision": "100c8726ecefa26fa2a21cc80d747fd2",
     "url": "/suspense_api_examples/index.html"
   },
   {
-    "revision": "d2c30087ea98dac785eb",
+    "revision": "ffc99f8e36e659755577",
     "url": "/suspense_api_examples/static/css/main.ff0f4af9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/suspense_api_examples/static/js/2.f6508b7e.chunk.js.LICENSE"
   },
   {
-    "revision": "d2c30087ea98dac785eb",
-    "url": "/suspense_api_examples/static/js/main.eb759940.chunk.js"
+    "revision": "ffc99f8e36e659755577",
+    "url": "/suspense_api_examples/static/js/main.d714955d.chunk.js"
   },
   {
     "revision": "2d62c4ba25e27398d62d",
