@@ -12,17 +12,17 @@ const Character = props => {
 
   return (
     <div>
-      <SuspenseList key={characterId} tail="collapsed" revealOrder="forwards">
-        <Suspense key={`Name-${characterId}`} fallback={<LoadingSpinner />}>
+      <SuspenseList tail="collapsed" revealOrder="forwards">
+        <Suspense fallback={<LoadingSpinner />}>
           <Name resource={resource} />
         </Suspense>
-        <Suspense key={`Quote-${characterId}`} fallback={<LoadingSpinner />}>
+        <Suspense fallback={<LoadingSpinner />}>
           <Quote resource={resource} />
         </Suspense>
-        <Suspense key={`MainImage-${characterId}`} fallback={<LoadingSpinner />}>
+        <Suspense fallback={<LoadingSpinner />}>
           <MainImage resource={resource} />
         </Suspense>
-        <Suspense key={`About-${characterId}`} fallback={<LoadingSpinner />}>
+        <Suspense fallback={<LoadingSpinner />}>
           <About resource={resource} />
         </Suspense>
       </SuspenseList>
