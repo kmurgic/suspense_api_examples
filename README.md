@@ -1,68 +1,23 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## React Concurrent Mode - Suspense API Examples
 
-In the project directory, you can run:
+This project demonstrates how data fetching works with the new React Suspense API.
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This code contains five examples of a Random Star Wars Character application.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Example 1 - Fetch On Render
+This example demonstrates the fetch on render pattern with a waterfall.  The application will wait for the name to load before fetching any other data.
 
-### `yarn test`
+### Example 2 - Fetch Then Render
+This example demonstrates the fetch then render pattern.  The application will fetch all the data before showing any of the data.  This pattern does not allow you to display data as it loads.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Example 3 - Suspense
+This example demonstrates how we can use the Suspense component to fetch data while rendering.  While the data is being fetched a fallback spinner appears in place of every component being rendered.  In this example the data loads in a random order.  We can improve upon this using a SuspenseList.
 
-### `yarn build`
+### Example 4 - Suspense List
+This example demonstrates how a SuspenseList component allows us to control the order in which things load on the page.  The SuspenseList will fetch data on render, but it will wait to display fetched data until it can be displayed in a logical order - in this case from top to bottom.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Example 5 - useTransition
+The final example demonstrates how the useTransition hook allows us to wait on the current page while trying to load a new page.  When the GET NEW CHARACTER button is first pressed, it switches to LOADING CHARACTER... and becomes disabled while it waits for the new page to load.  In this example the useTransition timeout is set to 1000ms, so if the new page takes more than 1 second to load, the application will transition to the new page and show a loading spinner on the new page until the data loads.  If the new page were to load in less than one second, the application would transition directly to the fully loaded new page.
