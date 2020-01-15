@@ -3,6 +3,7 @@ import './index.css';
 import characterList from '../characterList';
 import fetchCharacterData from '../fetchCharacterData';
 import Character from './Character';
+import BackToHome from '../BackToHome';
 
 function App() {
   const characterIds = characterList.map(char => char.id);
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <div className="App">
+      <BackToHome />
       <h1>Random Star Wars Character</h1>
       <Character
         buttonText={buttonText}
