@@ -1,8 +1,8 @@
 import React from 'react';
-import FetchThenRenderExample from './FetchThenRenderExample';
+import SuspenseExample from './SuspenseExample';
 
 const App = () => (
-  <FetchThenRenderExample />
+  <SuspenseExample />
 );
 
 export default App;

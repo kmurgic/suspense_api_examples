@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+.main-image {
+  width: 200px;
+}
+
+.about {
+  margin: 1em auto;
+  text-align: left;
+  width: 50%;
+}
+
+button {
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  font-size: 0.8em;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.loading-spinner {
+  height: 3em;
+}
