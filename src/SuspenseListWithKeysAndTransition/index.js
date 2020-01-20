@@ -1,13 +1,9 @@
-import React, { useState, useTransition, Suspense } from 'react';
+import React, { useState, useTransition } from 'react';
 import './index.css';
 import characterList from '../characterList';
 import fetchCharacterData from '../fetchCharacterData';
 import Character from './Character';
 import BackToHome from '../BackToHome';
-import Name from './Name';
-import Quote from './Quote';
-import MainImage from './MainImage';
-import About from './About';
 
 function App() {
   const characterIds = characterList.map(char => char.id);
@@ -36,14 +32,6 @@ function App() {
     <div className="App">
       <BackToHome />
       <h1>Random Star Wars Character</h1>
-      <Suspense fallback={null}>
-        <div style={{ display: 'none' }}>
-          <Name resource={resource} />
-          <Quote resource={resource} />
-          <MainImage resource={resource} />
-          <About resource={resource} />
-        </div>
-      </Suspense>
       <Character
         buttonText={buttonText}
         getNextCharacter={getNextCharacter}

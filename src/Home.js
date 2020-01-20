@@ -5,31 +5,31 @@ const Home = () => (
   <ul>
     <li>
       <Link
-        to={`${process.env.PUBLIC_URL}/fetch-on-render`}
+        to={`${process.env.PUBLIC_URL}/suspense-list-no-keys`}
       >
-        Fetch On Render Example
+        Suspense List Without Keys
       </Link>
     </li>
     <li>
       <Link
-        to={`${process.env.PUBLIC_URL}/fetch-then-render`}
+        to={`${process.env.PUBLIC_URL}/suspense-list-with-keys`}
       >
-        Fetch Then Render Example
+        Suspense List With Keys
       </Link>
     </li>
     <li>
-      <Link to={`${process.env.PUBLIC_URL}/suspense`}>
-        Suspense Example
+      <Link to={`${process.env.PUBLIC_URL}/suspense-list-with-keys-and-transition`}>
+        Suspense List With Keys and Transition
       </Link>
     </li>
     <li>
-      <Link to={`${process.env.PUBLIC_URL}/suspense-list`}>
-        Suspense List Example
+      <Link to={`${process.env.PUBLIC_URL}/suspense-list-nested-in-suspense`}>
+        Suspense List Nested in Suspense
       </Link>
     </li>
     <li>
-      <Link to={`${process.env.PUBLIC_URL}/use-transition`}>
-        useTransition Example
+      <Link to={`${process.env.PUBLIC_URL}/suspense-list-hacky`}>
+        Hacky Solution to Suspense List Issues
       </Link>
     </li>
   </ul>
