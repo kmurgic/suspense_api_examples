@@ -24,7 +24,7 @@ const Home = () => (
     </li>
     <li>
       <Link to={`${process.env.PUBLIC_URL}/suspense-list`}>
-        Suspense List Example
+        SuspenseList Example
       </Link>
     </li>
     <li>
