@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/suspense_api_examples/static/css/main.ff0f4af9.chunk.css",
-    "main.js": "/suspense_api_examples/static/js/main.d714955d.chunk.js",
-    "main.js.map": "/suspense_api_examples/static/js/main.d714955d.chunk.js.map",
+    "main.js": "/suspense_api_examples/static/js/main.993979f4.chunk.js",
+    "main.js.map": "/suspense_api_examples/static/js/main.993979f4.chunk.js.map",
     "runtime-main.js": "/suspense_api_examples/static/js/runtime-main.cf4d1bcc.js",
     "runtime-main.js.map": "/suspense_api_examples/static/js/runtime-main.cf4d1bcc.js.map",
     "static/js/2.f6508b7e.chunk.js": "/suspense_api_examples/static/js/2.f6508b7e.chunk.js",
     "static/js/2.f6508b7e.chunk.js.map": "/suspense_api_examples/static/js/2.f6508b7e.chunk.js.map",
     "index.html": "/suspense_api_examples/index.html",
-    "precache-manifest.9e9f32d9d3bbae2fc2b73fb6d4f80be3.js": "/suspense_api_examples/precache-manifest.9e9f32d9d3bbae2fc2b73fb6d4f80be3.js",
+    "precache-manifest.15de5bd0cc6f08ae34909fdcb71d1553.js": "/suspense_api_examples/precache-manifest.15de5bd0cc6f08ae34909fdcb71d1553.js",
     "service-worker.js": "/suspense_api_examples/service-worker.js",
     "static/css/main.ff0f4af9.chunk.css.map": "/suspense_api_examples/static/css/main.ff0f4af9.chunk.css.map",
     "static/js/2.f6508b7e.chunk.js.LICENSE": "/suspense_api_examples/static/js/2.f6508b7e.chunk.js.LICENSE",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.cf4d1bcc.js",
     "static/js/2.f6508b7e.chunk.js",
     "static/css/main.ff0f4af9.chunk.css",
-    "static/js/main.d714955d.chunk.js"
+    "static/js/main.993979f4.chunk.js"
   ]
 }
